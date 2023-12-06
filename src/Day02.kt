@@ -47,16 +47,16 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val test1Input = readInput("Day${day}_test1")
+    val test1Input = readInput("Day${day}_test1")!!
     val answer1 = part1(test1Input)
     "answer 1: $answer1".println()
     compare(answer1, 8)
 
-    val input = readInput("Day${day}")
+    val input = readInput("Day${day}") ?: test1Input
     part1(input).println()
     
     // test if implementation meets criteria from the description, like:
-    val test2Input = readInput("Day${day}_test2")
+    val test2Input = readInput("Day${day}_test2")!!
     val answer2 = part2(test2Input)
     "answer 2: $answer2".println()
     compare(answer2, 2286)

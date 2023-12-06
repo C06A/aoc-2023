@@ -42,14 +42,14 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val test1Input = readInput("Day01_test1")
+    val test1Input = readInput("Day01_test1")!!
     check(part1(test1Input) == 142)
 
     // test if implementation meets criteria from the description, like:
-    val test2Input = readInput("Day01_test2")
+    val test2Input = readInput("Day01_test2") ?: test1Input
     check(part2(test2Input) == 281)
 
-    val input = readInput("Day01")
+    val input = readInput("Day01")!!
     part1(input).println()
     part2(input).println()
 }

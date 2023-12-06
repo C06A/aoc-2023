@@ -76,14 +76,14 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val test1Input = readInput("Day${day}_test")
+    val test1Input = readInput("Day${day}_test")!!
     check(part1(test1Input) == 4361)
 
-    val input = readInput("Day${day}")
+    val input = readInput("Day${day}") ?: test1Input
     part1(input).println()
 
     // test if implementation meets criteria from the description, like:
-    val test2Input = readInput("Day${day}_test")
+    val test2Input = readInput("Day${day}_test")!!
     check(part2(test2Input) == 467835)
 
     part2(input).println()
